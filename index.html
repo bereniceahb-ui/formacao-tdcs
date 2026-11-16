@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Formação em tDCS · Prática Hospitalar e Reabilitação</title>
+<meta name="description" content="Formação em tDCS na Prática Hospitalar e Reabilitação, coordenada pela Profª. Ma. Bianca Fonseca. 160 horas, 12 encontros presenciais aos sábados no Rio de Janeiro. Início em 09/01/2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout (versão B): abertura em marrom com o mapa 10-20, corpo em branco e taupe claro, creme da clínica nos destaques, faixa laranja no investimento. */
+:root{
+  --bg:#FFFFFF; --surface:#FFFFFF; --stone:#EEE9E7; --ink:#3B2D28; --heading:#5A3F37;
+  --brown:#7A5950; --muted:#806C64; --line:#E0D8D5; --accent:#FF6D03; --accent-ink:#B84A00;
+  --accent-soft:#FFFACE; --band:#FF6D03; --band-ink:#2B1A14; --ph:#FFFACE;
+  --hero:#7A5950; --hero-ink:#FFFACE; --taupe:#CDC5C2;
+  --f-display:"Poppins",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Lato",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --s-1:clamp(2.4rem,5.4vw,4.4rem); --s-2:clamp(1.8rem,3.4vw,2.6rem); --s-3:1.3rem; --s-body:1.075rem; --s-small:.9rem;
+  --radius:18px; --wrap:1160px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1C1816; --surface:#26201D; --stone:#221D1A; --ink:#EEE6E2; --heading:#FFF6D6;
+  --brown:#CDC5C2; --muted:#A9998F; --line:#3A312C; --accent:#FF7F22; --accent-ink:#FF9C55;
+  --accent-soft:#3A3420; --band:#D85C00; --band-ink:#1A0F0A; --ph:#4A4222;
+  --hero:#3D2D27; --hero-ink:#FFFACE; --taupe:#5A4E49; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1C1816; --surface:#26201D; --stone:#221D1A; --ink:#EEE6E2; --heading:#FFF6D6;
+  --brown:#CDC5C2; --muted:#A9998F; --line:#3A312C; --accent:#FF7F22; --accent-ink:#FF9C55;
+  --accent-soft:#3A3420; --band:#D85C00; --band-ink:#1A0F0A; --ph:#4A4222;
+  --hero:#3D2D27; --hero-ink:#FFFACE; --taupe:#5A4E49; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:var(--s-body);line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);color:var(--heading);text-wrap:balance;margin:0;line-height:1.12;font-weight:600}
+h2{font-size:var(--s-2)} h3{font-size:var(--s-3);line-height:1.3}
+p{margin:0}
+a{color:var(--accent-ink)}
+.eyebrow{font-family:var(--f-display);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.lead{font-size:1.18rem;color:var(--brown);max-width:62ch}
+.mono{font-family:var(--f-mono);font-size:.85em;letter-spacing:.02em}
+.ph{background:var(--ph);border-radius:6px;padding:.05em .4em;font-style:normal;white-space:normal}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* Header */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;gap:24px;padding-block:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--heading);font-family:var(--f-display);font-weight:600;line-height:1.1;min-width:0}
+.brand small{display:block;font-family:var(--f-body);font-weight:400;font-size:.78rem;color:var(--muted)}
+.brand-mark{flex:none;width:34px;height:34px}
+nav.links{display:flex;gap:22px;margin-left:auto}
+nav.links a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav.links a:hover{color:var(--accent-ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f-display);font-weight:600;font-size:.98rem;padding:.8em 1.4em;border-radius:999px;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:var(--accent);color:#2B1A0E}
+.btn-ghost{background:transparent;color:var(--heading);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brown)}
+header .btn{padding:.6em 1.1em;font-size:.9rem;flex:none}
+@media (max-width:860px){nav.links{display:none} header .btn{margin-left:auto}}
+
+/* Hero */
+.hero{padding-block:clamp(40px,7vw,88px) clamp(48px,7vw,96px);background:var(--hero);color:var(--hero-ink)}
+.hero h1,.hero h1 span{color:var(--hero-ink)}
+.hero h1 span{opacity:.85}
+.hero .lead{color:color-mix(in srgb,var(--hero-ink) 86%,transparent)}
+.hero .eyebrow{color:var(--hero-ink);display:inline-flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:28px;height:4px;border-radius:2px;background:var(--accent)}
+.hero .btn-ghost{color:var(--hero-ink);border-color:color-mix(in srgb,var(--hero-ink) 45%,transparent)}
+.hero .btn-ghost:hover{border-color:var(--hero-ink)}
+.hero .facts{border-top-color:color-mix(in srgb,var(--hero-ink) 28%,transparent)}
+.hero .facts b{color:var(--hero-ink)}
+.hero .facts span{color:color-mix(in srgb,var(--hero-ink) 75%,transparent)}
+.hero .mapcard{border-color:transparent;box-shadow:0 18px 50px rgba(30,15,10,.25)}
+.hero .mapcard .eyebrow{color:var(--accent-ink)}
+.hero .mapcard .eyebrow::before{display:none}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:22px;min-width:0}
+.hero h1{font-size:var(--s-1);letter-spacing:-.015em;line-height:1.02}
+.hero h1 span{display:block;font-size:.46em;font-weight:500;color:var(--brown);letter-spacing:0;margin-top:.35em;line-height:1.2}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:6px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:18px;border-top:1px solid var(--line)}
+.facts div{padding:16px 14px 0 0}
+.facts b{display:block;font-family:var(--f-display);font-size:1.6rem;color:var(--heading);line-height:1.1}
+.facts span{font-size:var(--s-small);color:var(--muted)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}.facts{grid-template-columns:repeat(2,1fr)}}
+
+.mapcard{background:var(--surface);border:1px solid var(--line);border-radius:28px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.mapcard header{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.mapcard header p{font-size:var(--s-small);color:var(--muted)}
+.headmap{width:100%;max-width:420px;margin:0 auto;display:block;aspect-ratio:400/440;height:auto}
+.headmap .skull{fill:var(--bg);stroke:var(--brown);stroke-width:2.5}
+.headmap .guide{fill:none;stroke:var(--line);stroke-width:1.5;stroke-dasharray:4 6}
+.headmap .lm{font-family:var(--f-mono);font-size:10px;fill:var(--muted)}
+.pt{cursor:pointer}
+.pt circle.dot{fill:var(--surface);stroke:var(--brown);stroke-width:2;transition:fill .15s}
+.pt text{font-family:var(--f-mono);font-size:10.5px;fill:var(--heading);pointer-events:none;text-anchor:middle;dominant-baseline:central;font-weight:500}
+.pt.key circle.dot{fill:var(--accent-soft);stroke:var(--accent)}
+.pt .halo{fill:var(--accent);opacity:0}
+.pt.key .halo{animation:pulse 2.8s ease-in-out infinite}
+.pt:hover circle.dot,.pt:focus-visible circle.dot{fill:var(--accent-soft)}
+.pt.on circle.dot{fill:var(--accent);stroke:var(--accent)}
+.pt.on text{fill:#2B1A0E}
+.pt:focus{outline:none}
+@keyframes pulse{0%,100%{opacity:0;r:15}50%{opacity:.22;r:24}}
+.ptinfo{border-top:1px solid var(--line);padding-top:14px;min-height:96px;display:flex;flex-direction:column;gap:4px}
+.ptinfo .code{font-family:var(--f-mono);color:var(--accent-ink);font-size:.95rem}
+.ptinfo h3{font-size:1.08rem}
+.ptinfo p{font-size:.95rem;color:var(--brown)}
+
+/* Sections */
+section.block{padding-block:clamp(56px,8vw,104px)}
+section.alt{background:var(--stone)}
+section.alt .card,section.alt .panel{border-color:var(--taupe)}
+.sec-head{display:flex;flex-direction:column;gap:12px;margin-bottom:clamp(28px,4vw,48px);max-width:760px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:860px){.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card p{color:var(--ink)}
+.tick{width:44px;height:5px;border-radius:3px;background:var(--brown)}
+
+/* Objetivos */
+.goals{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:18px 40px;counter-reset:g}
+.goals li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start;padding-block:18px;border-top:1px solid var(--line);counter-increment:g}
+.goals li::before{content:counter(g);font-family:var(--f-display);font-weight:600;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#2B1A0E;display:grid;place-items:center}
+@media (max-width:760px){.goals{grid-template-columns:1fr}}
+
+/* Programa */
+.prog{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
+.tabs{display:flex;flex-direction:column;gap:8px}
+.tab{all:unset;cursor:pointer;display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;padding:14px 16px;border-radius:14px;border:1px solid transparent;color:var(--ink)}
+.tab .n{grid-row:span 2;font-family:var(--f-display);font-weight:700;font-size:1.7rem;color:var(--muted);line-height:1}
+.tab .t{font-family:var(--f-display);font-weight:600;font-size:.98rem;color:var(--heading);line-height:1.25}
+.tab .s{font-size:.82rem;color:var(--muted)}
+.tab[aria-selected="true"]{background:var(--surface);border-color:var(--line)}
+.tab[aria-selected="true"] .n{color:var(--accent)}
+.tab:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(22px,3vw,36px);display:flex;flex-direction:column;gap:22px;min-width:0}
+.panel .cols{display:grid;grid-template-columns:1.4fr 1fr;gap:20px}
+.panel .col{display:flex;flex-direction:column;gap:10px;min-width:0}
+.panel .col.pr{background:var(--accent-soft);border-radius:14px;padding:20px}
+.panel ul{margin:0;padding-left:1.15em;display:flex;flex-direction:column;gap:8px}
+.chip{display:inline-block;font-family:var(--f-display);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.cadence{margin-top:22px;color:var(--brown);font-size:.98rem}
+@media (max-width:860px){.prog{grid-template-columns:1fr}.tabs{flex-direction:row;overflow-x:auto;padding-bottom:4px}.tab{min-width:200px}.panel .cols{grid-template-columns:1fr}}
+
+/* Calculadora */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.calc .controls{display:flex;flex-direction:column;gap:22px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-family:var(--f-display);font-weight:600;color:var(--heading);font-size:.95rem;display:flex;justify-content:space-between;gap:8px}
+.field label output{font-family:var(--f-mono);color:var(--accent-ink)}
+input[type=range]{width:100%;accent-color:var(--accent)}
+.seg{display:flex;flex-wrap:wrap;gap:8px}
+.seg button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:.9rem;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink);background:var(--bg)}
+.seg button[aria-pressed="true"]{background:var(--heading);color:var(--bg);border-color:var(--heading)}
+.seg button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.readout{background:var(--hero);color:var(--hero-ink);border-radius:22px;padding:28px;display:flex;flex-direction:column;gap:18px;justify-content:space-between}
+.readout .big{font-family:var(--f-mono);font-size:clamp(2.2rem,5vw,3.2rem);line-height:1;color:var(--hero-ink)}
+.readout .big small{font-size:.4em;opacity:.8;margin-left:.3em}
+.readout .lbl{font-size:.85rem;opacity:.8;letter-spacing:.06em;text-transform:uppercase;font-family:var(--f-display);font-weight:600}
+.readout .row{display:grid;grid-template-columns:1fr 1fr;gap:16px;border-top:1px solid color-mix(in srgb,var(--hero-ink) 25%,transparent);padding-top:16px}
+.readout .row b{font-family:var(--f-mono);font-size:1.25rem;font-weight:500;display:block}
+.readout .formula{font-family:var(--f-mono);font-size:.82rem;opacity:.85}
+.note{font-size:var(--s-small);color:var(--muted);margin-top:16px;max-width:75ch}
+@media (max-width:860px){.calc{grid-template-columns:1fr}}
+
+/* Público */
+.roles{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+.roles span{font-family:var(--f-display);font-weight:500;padding:10px 18px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--heading)}
+
+/* Segurança */
+.safety{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:start}
+.safety blockquote{margin:0;font-family:var(--f-display);font-weight:500;font-size:clamp(1.3rem,2.4vw,1.75rem);line-height:1.35;color:var(--brown)}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.checks li{display:grid;grid-template-columns:28px 1fr;gap:14px;padding-block:14px;border-bottom:1px solid var(--line)}
+.checks li:first-child{border-top:1px solid var(--line)}
+.checks svg{width:22px;height:22px;margin-top:3px;stroke:var(--accent-ink)}
+@media (max-width:860px){.safety{grid-template-columns:1fr}}
+
+/* Docente */
+.teacher{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.avatar{width:220px;height:220px;max-width:100%;border-radius:50%;border:5px solid var(--taupe);background:var(--accent-soft);display:grid;place-items:center;font-family:var(--f-display);font-weight:600;font-size:4.4rem;color:var(--brown)}
+.teacher .bio{display:flex;flex-direction:column;gap:14px;max-width:68ch}
+.photo{position:relative;margin:0 18px 18px 0;max-width:360px}
+.photo::before{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:28px;background:var(--taupe)}
+.photo img{position:relative;display:block;width:100%;height:auto;border-radius:28px;background:#FFFFFF}
+.by{display:flex;gap:14px;align-items:center;margin-top:8px}
+.by img{width:68px;height:68px;flex:none;border-radius:50%;box-shadow:0 0 0 2px color-mix(in srgb,var(--hero-ink,#FFFACE) 70%,transparent)}
+.by p{display:flex;flex-direction:column;line-height:1.3;min-width:0}
+.by b{font-family:var(--f-display);font-weight:600;color:var(--heading)}
+.by span{font-size:var(--s-small);color:var(--muted)}
+.hero .by b{color:inherit} .hero .by span{color:inherit;opacity:.8}
+@media (max-width:760px){.teacher{grid-template-columns:1fr}.photo{max-width:280px}}
+
+/* Incluso */
+.incl{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
+.incl div{padding:22px 22px 22px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:6px}
+.incl h3{font-size:1.05rem}
+.incl p{color:var(--brown);font-size:.97rem}
+@media (max-width:860px){.incl{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.incl{grid-template-columns:1fr}}
+
+/* Investimento */
+.invest{background:var(--band);color:var(--band-ink)}
+.invest h2,.invest h3{color:var(--band-ink)}
+.invest .eyebrow{color:var(--band-ink)}
+.invest .lead{color:color-mix(in srgb,var(--band-ink) 82%,transparent)}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.plan{border-radius:24px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:16px;min-width:0}
+.plan.ind{background:var(--surface);color:var(--ink)}
+.plan.ind .btn-primary{background:var(--hero);color:var(--hero-ink)}
+.plan.ind h3{color:var(--heading)}
+.plan.inc{border:1px solid color-mix(in srgb,var(--band-ink) 30%,transparent)}
+.price{font-family:var(--f-display);font-weight:700;font-size:clamp(2.2rem,4.6vw,3rem);line-height:1;letter-spacing:-.01em}
+.plan.ind .price{color:var(--heading)}
+.price small{font-size:.38em;font-weight:500;opacity:.75;margin-left:.2em}
+.plan ul{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:6px}
+.plan .btn{align-self:flex-start;margin-top:auto}
+.plan.inc .btn-ghost{color:var(--band-ink);border-color:color-mix(in srgb,var(--band-ink) 40%,transparent)}
+.turma{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px 28px;font-size:.98rem}
+.turma b{font-family:var(--f-display);font-weight:600}
+.invest .ph{background:var(--accent-soft);color:var(--ink)}
+@media (max-width:860px){.plans{grid-template-columns:1fr}}
+
+/* Inscrição */
+.enroll{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(24px,4vw,56px);align-items:start}
+form.f{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,3vw,32px);display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form.f .full{grid-column:1/-1}
+form.f label{display:flex;flex-direction:column;gap:6px;font-family:var(--f-display);font-weight:500;font-size:.9rem;color:var(--heading);min-width:0}
+form.f input,form.f select,form.f textarea{font:inherit;font-family:var(--f-body);font-size:1rem;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;width:100%}
+form.f textarea{min-height:96px;resize:vertical}
+form.f input:focus,form.f select:focus,form.f textarea:focus{outline:2px solid var(--accent);outline-offset:1px}
+.radio{display:flex;gap:10px;flex-wrap:wrap}
+.radio label{flex-direction:row;align-items:center;gap:8px;font-family:var(--f-body);font-weight:400;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);cursor:pointer}
+.radio input{width:auto;accent-color:var(--accent)}
+.err{color:#B3261E;font-size:.88rem;font-family:var(--f-body)}
+:root[data-theme="dark"] .err{color:#FF8A80}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .err{color:#FF8A80}}
+.result{grid-column:1/-1;background:var(--accent-soft);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:12px}
+.result pre{margin:0;white-space:pre-wrap;font-family:var(--f-body);font-size:.95rem;background:var(--bg);border-radius:10px;padding:14px;border:1px solid var(--line);max-height:260px;overflow:auto}
+.result .acts{display:flex;flex-wrap:wrap;gap:10px}
+.contact-list{display:flex;flex-direction:column;gap:12px;margin-top:22px}
+.contact-list div{display:grid;grid-template-columns:96px 1fr;gap:10px;font-size:.98rem}
+.contact-list dt,.contact-list span.k{font-family:var(--f-display);font-weight:600;color:var(--heading)}
+@media (max-width:860px){.enroll{grid-template-columns:1fr} form.f{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{display:flex;flex-direction:column;max-width:860px}
+.faq details{border-bottom:1px solid var(--line);padding-block:4px}
+.faq details:first-child{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;font-family:var(--f-display);font-weight:600;color:var(--heading);padding:18px 40px 18px 0;position:relative;font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:12px;font-size:1.6rem;font-weight:400;color:var(--accent-ink);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding:0 0 20px;color:var(--ink);max-width:70ch}
+
+footer.foot{border-top:1px solid var(--line);padding-block:36px;font-size:.92rem;color:var(--muted)}
+footer.foot .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center}
+footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
+
+/* Arte da abertura: cérebro em moldura de folha */
+.hero-art{position:relative;margin:0;width:100%;max-width:500px;justify-self:center;min-width:0}
+.hero-art::before{content:"";position:absolute;inset:-14px -14px 14px 14px;border-radius:220px 36px 220px 36px;border:1.5px solid var(--accent);opacity:.55;pointer-events:none}
+.leaf{position:relative;border-radius:200px 32px 200px 32px;overflow:hidden;aspect-ratio:4/5;background:#FFF8EE;box-shadow:0 24px 60px rgba(70,35,15,.18)}
+.leaf img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.float{position:absolute;display:flex;align-items:center;gap:10px;background:var(--surface);color:var(--heading);border:1px solid var(--line);border-radius:999px;padding:10px 16px;font-family:var(--f-display);font-weight:600;font-size:.86rem;line-height:1.2;box-shadow:0 12px 30px rgba(60,30,15,.16);max-width:calc(100% - 16px)}
+.float b{color:var(--accent-ink);font-size:1.05rem}
+.f1{left:-22px;bottom:16%} .f2{right:-16px;top:10%}
+.live{width:10px;height:10px;flex:none;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 var(--accent);animation:live 2.2s ease-out infinite}
+@keyframes live{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 55%,transparent)}100%{box-shadow:0 0 0 12px transparent}}
+@media (max-width:900px){.hero-art{max-width:420px}.f1{left:6px}.f2{right:6px}}
+
+/* Mapa 10-20 na seção prática */
+.maplayout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,56px);align-items:center;margin-bottom:clamp(56px,8vw,96px)}
+.mapside{display:flex;flex-direction:column;gap:16px;min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:.92rem;color:var(--brown)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:14px;height:14px;border-radius:50%;border:2px solid var(--brown);background:var(--surface)}
+.legend i.k{border-color:var(--accent);background:var(--accent-soft)}
+.quick{display:flex;flex-wrap:wrap;gap:8px}
+.quick button{all:unset;cursor:pointer;font-family:var(--f-mono);font-size:.88rem;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--heading)}
+.quick button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#2B1A0E}
+.quick button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.mapside .ptinfo{background:var(--accent-soft);border:0;border-radius:18px;padding:20px 22px;min-height:120px}
+.sub-divider{height:1px;background:var(--line);margin-bottom:clamp(40px,6vw,72px)}
+@media (max-width:860px){.maplayout{grid-template-columns:1fr}}
+
+/* Versão B: hero com degradê do marrom para a arte do cérebro */
+.hero-bleed{position:relative;overflow:hidden;isolation:isolate}
+.hero-bleed .wrap{position:relative;z-index:1;grid-template-columns:minmax(0,560px) 1fr}
+.hero-bg{position:absolute;top:0;right:0;bottom:0;width:62%;z-index:0}
+.hero-bg img{display:block;width:100%;height:100%;object-fit:cover;object-position:right center;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.1) 6%,rgba(0,0,0,.35) 14%,rgba(0,0,0,.7) 22%,rgba(0,0,0,.92) 28%,#000 34%);
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.1) 6%,rgba(0,0,0,.35) 14%,rgba(0,0,0,.7) 22%,rgba(0,0,0,.92) 28%,#000 34%)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--hero) 22%,transparent) 0%,transparent 40%);pointer-events:none}
+.hero-bg .float{z-index:1}
+.hero-bg .f2{right:max(24px,env(safe-area-inset-right,0px));top:16%;left:auto}
+.hero-bg .f1{left:auto;right:30%;bottom:14%}
+.hero-space{min-height:420px}
+.hero-bg picture{display:block;width:100%;height:100%}
+@media (min-width:1181px) and (max-width:1339px){.hero-bleed .wrap{grid-template-columns:minmax(0,460px) 1fr}.hero h1{font-size:clamp(2.4rem,4.6vw,3.6rem)}}
+@media (max-width:1180px){
+  .hero-bleed{display:flex;flex-direction:column;padding-bottom:0}
+  .hero-bleed .wrap{order:1;grid-template-columns:1fr}
+  .hero-space{display:none}
+  .hero-bleed .hero-copy{max-width:720px}
+  .hero-bg{order:2;position:relative;width:100%;height:min(100vw,640px);margin-top:8px}
+  .hero-bg img{object-position:50% 30%;
+    -webkit-mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.5) 4%,#000 9%);
+    mask-image:linear-gradient(180deg,transparent 0%,rgba(0,0,0,.5) 4%,#000 9%)}
+  .hero-bg::after{display:none}
+  .hero-bg .f2{top:12%;bottom:auto;right:16px}
+  .hero-bg .f1{left:auto;right:16px;bottom:8%}
+}
+
+/* subtítulo do título em creme sobre o marrom */
+.hero h1 span{color:var(--hero-ink);opacity:.88}
+@media (min-width:1181px){.hero-bg{width:58%}}
+@media (max-width:640px){.hero-bg .float{display:none}}
+.eb{margin:0;background:var(--accent-soft);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:.95rem}
+.eb b{color:var(--accent-ink)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Formação em tDCS, início">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="14" fill="none" stroke="var(--brown)" stroke-width="2.2"/><circle cx="11" cy="15" r="3.2" fill="var(--accent)"/><circle cx="23" cy="15" r="3.2" fill="var(--accent)"/><circle cx="17" cy="23" r="2.4" fill="var(--brown)"/></svg>
+      <span>Formação em tDCS<small>Profª. Ma. Bianca Fonseca · Movimento Uniforme</small></span>
+    </a>
+    <nav class="links" aria-label="Seções">
+      <a href="#programa">Programa</a>
+      <a href="#publico">Para quem</a>
+      <a href="#docente">Docente</a>
+      <a href="#investimento">Investimento</a>
+      <a href="#faq">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" href="#inscricao">Quero me inscrever</a>
+  </div>
+</header>
+
+<main id="inicio">
+<!-- HERO -->
+<section class="hero hero-bleed">
+  <div class="hero-bg">
+    <picture><source media="(max-width:1180px)" srcset="hero-tdcs-m.jpg"><img src="hero-tdcs.jpg" alt="Ilustração de uma cabeça de perfil com o cérebro iluminado e dois eletrodos de esponja de tDCS presos por faixa elástica, com neurônios e fitas translúcidas ao fundo" width="1600" height="1200"></picture>
+    <div class="float f2"><b>160 h</b> presencial · RJ</div>
+    <div class="float f1"><span class="live" aria-hidden="true"></span>Neuromodulação não invasiva</div>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">Formação presencial · Rio de Janeiro</p>
+      <h1>Formação em tDCS<span>na Prática Hospitalar e Reabilitação</span></h1>
+      <p class="lead">Estimulação Transcraniana por Corrente Contínua, dos fundamentos neurofisiológicos à condução de protocolos clínicos em ambiente hospitalar, ambulatorial e domiciliar, com segurança e critério.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#inscricao">Garantir minha vaga</a>
+        <a class="btn btn-ghost" href="#programa">Ver o programa</a>
+      </div>
+      <div class="facts" role="list">
+        <div role="listitem"><b>160 h</b><span>de formação</span></div>
+        <div role="listitem"><b>12</b><span>encontros aos sábados</span></div>
+        <div role="listitem"><b>09/01</b><span>início da turma, 2027</span></div>
+        <div role="listitem"><b>15% OFF</b><span>inscrições até 09/12/2026</span></div>
+      </div>
+      <a class="by" href="#docente" style="text-decoration:none;color:inherit"><img src="dra-bianca-circulo.png" alt="" width="240" height="240"><p><b>Coordenação: Profª. Ma. Bianca Fonseca</b><span>Mais de 20 anos em neurodesenvolvimento</span></p></a>
+    </div>
+
+    <div class="hero-space" aria-hidden="true"></div>
+  </div>
+</section>
+
+<!-- POR QUE -->
+<section class="block alt" id="sobre">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Por que esta formação</p>
+      <h2>A neuromodulação não invasiva ganhou espaço na reabilitação. Aplicá-la bem exige base sólida.</h2>
+      <p class="lead">Para usar a tDCS com segurança e critério, o profissional precisa de fundamentação teórica e de prática supervisionada. É isso que a formação entrega.</p>
+    </div>
+    <div class="grid3">
+      <article class="card"><span class="tick"></span><h3>Segurança do paciente</h3><p>Mapeamento preciso, parametrização correta e domínio das contraindicações e do manejo de efeitos adversos.</p></article>
+      <article class="card"><span class="tick"></span><h3>Protocolos para a realidade clínica</h3><p>Aplicação em ambiente hospitalar, ambulatorial e domiciliar, com foco em neurologia e reabilitação.</p></article>
+      <article class="card"><span class="tick"></span><h3>Cuidado integrado</h3><p>Como articular a tDCS com fisioterapia, fonoaudiologia, terapia ocupacional e outras abordagens da equipe.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Objetivos de aprendizagem</p>
+      <h2>Ao final da formação, você estará apto a</h2>
+    </div>
+    <ol class="goals">
+      <li><p>Compreender os mecanismos bioelétricos da tDCS: alteração do potencial de repouso da membrana e plasticidade sináptica (LTP/LTD).</p></li>
+      <li><p>Localizar com precisão os alvos corticais pelo Sistema Internacional 10-20.</p></li>
+      <li><p>Identificar indicações, contraindicações e parâmetros de segurança, e manejar efeitos adversos.</p></li>
+      <li><p>Elaborar protocolos individualizados para dor crônica, reabilitação motora, cognição, rebaixamento do nível de consciência e disautonomias, como a hiperatividade simpática paroxística (PSH).</p></li>
+      <li><p>Manusear os equipamentos: montagem de eletrodos, preparo das esponjas com solução salina e cálculo da densidade de corrente.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PROGRAMA -->
+<section class="block alt" id="programa">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Conteúdo programático</p>
+      <h2>Conteúdo organizado em 4 módulos</h2>
+      <p class="lead">Uma sequência progressiva, em que cada encontro combina teoria e prática.</p>
+    </div>
+    <div class="prog">
+      <div class="tabs" role="tablist" aria-label="Módulos">
+        <button class="tab" role="tab" id="tab-1" aria-controls="panel" aria-selected="true" data-i="0"><span class="n">01</span><span class="t">Fundamentos e mapeamento cortical</span><span class="s">Módulo 1</span></button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="1"><span class="n">02</span><span class="t">Parâmetros, equipamentos e segurança</span><span class="s">Módulo 2</span></button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="2"><span class="n">03</span><span class="t">Aplicações clínicas em neurologia</span><span class="s">Módulo 3</span></button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="3"><span class="n">04</span><span class="t">Protocolos avançados e hands-on</span><span class="s">Módulo 4</span></button>
+      </div>
+      <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-1">
+        <div><span class="chip" id="p-chip">Módulo 1</span><h3 id="p-title" style="font-size:1.55rem;margin-top:6px">Fundamentos da tDCS e mapeamento cortical</h3></div>
+        <div class="cols">
+          <div class="col"><span class="chip">Teoria</span><ul id="p-teo"></ul></div>
+          <div class="col pr"><span class="chip">Prática</span><ul id="p-pra"></ul></div>
+        </div>
+      </div>
+    </div>
+    <p class="cadence">São <b>12 encontros presenciais aos sábados, das 9h às 13h</b>, com início em 9 de janeiro de 2027, no Rio de Janeiro. Carga horária total: 160 horas.</p>
+  </div>
+</section>
+
+<!-- PÚBLICO -->
+<section class="block" id="publico">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Público-alvo</p>
+      <h2>Para quem é a formação</h2>
+    </div>
+    <div class="roles"><span>Médicos</span><span>Psicólogos</span><span>Fisioterapeutas</span><span>Fonoaudiólogos</span><span>Enfermeiros</span></div>
+    <p class="lead">Profissionais que atuam em ambiente <b>hospitalar, ambulatorial ou domiciliar</b>, especialmente em neurologia e reabilitação. A turma é multiprofissional, o que favorece a atuação integrada.</p>
+    <p class="note">Pré-requisitos: <i class="ph">[confirmar com a Profª. Bianca: formação exigida e documentação]</i>. Cada conselho profissional tem normas próprias sobre o uso da tDCS; vale consultar as do seu.</p>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="block alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Diferenciais</p>
+      <h2>O que torna esta formação única</h2>
+    </div>
+    <div class="grid3">
+      <article class="card"><h3>Neuromodulação combinada</h3><p>Além da tDCS isolada, você vê como integrá-la à fotobiomodulação transcraniana (tPBM) e à estimulação transcutânea do nervo vago (tVNS) em casos graves.</p></article>
+      <article class="card"><h3>Casos de UTI e internação</h3><p>Protocolos pensados para pacientes com encefalopatia, risco de disautonomia (PSH) e alteração do nível de consciência.</p></article>
+      <article class="card"><h3>Prática própria e assistida</h3><p>Manuseio real dos equipamentos e mapeamento anatômico de precisão, com supervisão direta da docente.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- SEGURANÇA -->
+<section class="block">
+  <div class="wrap safety">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p class="eyebrow">Compromisso ético</p>
+      <h2>Segurança em primeiro lugar</h2>
+      <blockquote>Toda a formação é construída sobre critérios de segurança, avaliação individual e prática supervisionada.</blockquote>
+    </div>
+    <ul class="checks">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><p>Triagem de contraindicações absolutas e relativas antes de cada aplicação.</p></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><p>Parâmetros de estimulação dentro dos limites de segurança.</p></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><p>Prevenção de lesões de pele e manejo de efeitos adversos.</p></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><p>Protocolos individualizados, definidos a partir de avaliação clínica.</p></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><p>A tDCS como recurso complementar ao plano terapêutico, sem substituir a avaliação e a indicação de cada caso.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- DOCENTE -->
+<section class="block alt" id="docente">
+  <div class="wrap teacher">
+    <figure class="photo"><img src="dra-bianca.jpg" alt="Profª. Ma. Bianca Fonseca, de jaleco branco, sorrindo e segurando um modelo anatômico do cérebro" width="760" height="832" loading="lazy"></figure>
+    <div class="bio">
+      <p class="eyebrow">Coordenação</p>
+      <h2>Profª. Ma. Bianca Fonseca</h2>
+      <p>Psicóloga, psicanalista, psicopedagoga, psicomotricista e neuropsicopedagoga, com mais de 20 anos de experiência. Especialista em neurodesenvolvimento e neurofeedback, atua também com fotobiomodulação e com intervenções voltadas à aprendizagem, ao comportamento e às funções cognitivas.</p>
+      <p><i class="ph">[Formação e experiência específicas em neuromodulação e tDCS]</i> · <i class="ph">[Registro profissional]</i></p>
+      <p style="font-family:var(--f-display);font-weight:600;color:var(--heading)">Movimento Uniforme · Reeducação Cognitivo-motora e Neurorreabilitação</p>
+    </div>
+  </div>
+</section>
+
+<!-- INCLUSO -->
+<section class="block">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">O que está incluso</p>
+      <h2>Estrutura e materiais incluídos</h2>
+    </div>
+    <div class="incl">
+      <div><h3>160 horas de formação</h3><p>Teoria e prática em 12 encontros presenciais aos sábados.</p></div>
+      <div><h3>Material didático</h3><p>Apostila impressa e digital, com bloco e caneta.</p></div>
+      <div><h3>Insumos práticos</h3><p>Solução fisiológica, esponjas, fita métrica, lápis dermográfico, gaze e álcool.</p></div>
+      <div><h3>Equipamentos</h3><p>2 a 3 estimuladores de tDCS disponíveis nas aulas práticas.</p></div>
+      <div><h3>Certificado</h3><p>Certificado de conclusão em papel especial, com selo.</p></div>
+      <div><h3>Coffee break</h3><p>Servido em todos os encontros.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- INVESTIMENTO -->
+<section class="block invest" id="investimento">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Investimento</p>
+      <h2>Escolha como participar</h2>
+      <p class="lead">Inscrição individual em turma aberta ou uma turma fechada para a equipe da sua instituição.</p>
+    </div>
+    <div class="plans">
+      <article class="plan ind">
+        <span class="chip">Inscrição individual</span>
+        <h3>Turma aberta</h3>
+        <p class="price"><span class="ph">[valor]</span><small>por participante</small></p>
+        <p class="eb"><b>Early bird:</b> 15% de desconto para inscrições até 09/12/2026</p>
+        <ul>
+          <li>Os 12 encontros e as 160 horas de formação</li>
+          <li>Apostila, insumos e equipamentos para a prática</li>
+          <li>Certificado e coffee break</li>
+          <li>Condições: <i class="ph">[parcelamento / Pix / cartão]</i></li>
+        </ul>
+        <a class="btn btn-primary" href="#inscricao" data-mod="individual">Quero minha vaga</a>
+      </article>
+      <article class="plan inc">
+        <span class="chip" style="color:var(--band-ink)">Para hospitais e clínicas</span>
+        <h3>Turma in-company</h3>
+        <p class="price">Sob proposta</p>
+        <ul>
+          <li>Turma fechada com até 15 profissionais da sua equipe</li>
+          <li>Encontros nas dependências da instituição</li>
+          <li>Valor por profissional menor que o da inscrição individual</li>
+          <li>Mesmo conteúdo, materiais e certificação</li>
+        </ul>
+        <a class="btn btn-ghost" href="#inscricao" data-mod="incompany">Solicitar proposta</a>
+      </article>
+    </div>
+    <div class="turma">
+      <span><b>Início:</b> 09/01/2027</span>
+      <span><b>Local:</b> Rio de Janeiro · <i class="ph">[endereço]</i></span>
+      <span><b>Horário:</b> sábados, das 9h às 13h</span>
+    </div>
+  </div>
+</section>
+
+<!-- INSCRIÇÃO -->
+<section class="block" id="inscricao">
+  <div class="wrap enroll">
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <p class="eyebrow">Pré-inscrição</p>
+      <h2>Reserve seu interesse na próxima turma</h2>
+      <p class="lead">Preencha os dados e envie a mensagem pronta para a nossa equipe. Respondemos com datas, condições e o link de pagamento.</p>
+      <div class="contact-list">
+        <div><span class="k">WhatsApp</span><span id="wa-txt">(21) 2026-6620</span></div>
+        <div><span class="k">E-mail</span><span class="ph">[contato@...]</span></div>
+        <div><span class="k">Instagram</span><span class="ph">[@...]</span></div>
+      </div>
+    </div>
+    <form class="f" id="form" novalidate>
+      <div class="full radio" role="radiogroup" aria-label="Modalidade">
+        <label><input type="radio" name="mod" id="mod-ind" value="individual" checked> Inscrição individual</label>
+        <label><input type="radio" name="mod" id="mod-inc" value="incompany"> Turma in-company</label>
+      </div>
+      <label class="full">Nome completo<input id="nome" name="nome" autocomplete="name" required></label>
+      <label>Profissão
+        <select id="prof" name="prof" required>
+          <option value="">Selecione</option>
+          <option>Médico(a)</option><option>Psicólogo(a)</option><option>Fisioterapeuta</option>
+          <option>Fonoaudiólogo(a)</option><option>Enfermeiro(a)</option><option>Outra</option>
+        </select>
+      </label>
+      <label>Cidade / UF<input id="cidade" name="cidade" autocomplete="address-level2"></label>
+      <label class="full" id="inst-wrap" hidden>Instituição e nº de profissionais<input id="inst" name="inst" placeholder="Ex.: Hospital X · 12 profissionais"></label>
+      <label class="full">Telefone / WhatsApp<input id="tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required></label>
+      <label class="full">Mensagem (opcional)<textarea id="msg" name="msg" placeholder="Conte o que você espera da formação"></textarea></label>
+      <p class="err full" id="err" hidden></p>
+      <button class="btn btn-primary full" type="submit" style="justify-self:start">Gerar minha mensagem</button>
+      <div class="result" id="result" hidden>
+        <p style="font-family:var(--f-display);font-weight:600;color:var(--heading)">Mensagem pronta. Copie e envie pelo WhatsApp ou e-mail.</p>
+        <pre id="out"></pre>
+        <div class="acts">
+          <button type="button" class="btn btn-primary" id="copy">Copiar mensagem</button>
+          <a class="btn btn-ghost" id="wa" target="_blank" rel="noopener" hidden>Abrir o WhatsApp</a>
+        </div>
+        <p class="note" id="copy-note" style="margin:0" aria-live="polite"></p>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="block alt" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2>Antes de se inscrever</h2>
+    </div>
+    <div class="faq">
+      <details><summary>A formação é presencial?</summary><p>Sim. As práticas exigem manuseio dos equipamentos, montagem de eletrodos e mapeamento com supervisão direta, por isso todos os encontros são presenciais, no Rio de Janeiro.</p></details>
+      <details><summary>Preciso levar equipamento?</summary><p>Não. A formação disponibiliza 2 a 3 estimuladores de tDCS e todos os insumos para as aulas práticas.</p></details>
+      <details><summary>Recebo certificado?</summary><p>Sim. Ao concluir a formação e a avaliação prática por checklist, você recebe o certificado de 160 horas.</p></details>
+      <details><summary>A tDCS substitui outros tratamentos?</summary><p>Não. A formação trata a tDCS como recurso complementar ao plano terapêutico, sempre a partir de avaliação clínica individual e sem promessa de resultado terapêutico.</p></details>
+      <details><summary>Como funciona a turma in-company?</summary><p>É uma turma fechada para até 15 profissionais da sua instituição, realizada nas suas dependências, com o mesmo conteúdo, materiais e certificação. Envie uma pré-inscrição marcando "Turma in-company" para receber a proposta.</p></details>
+      <details><summary>Quando são os encontros?</summary><p>São 12 encontros presenciais aos sábados, das 9h às 13h, com início em 9 de janeiro de 2027.</p></details>
+      <details><summary>Há desconto para inscrição antecipada?</summary><p>Sim. Inscrições feitas até 09/12/2026 têm 15% de desconto (early bird).</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p><b>Formação em tDCS</b> · Profª. Ma. Bianca Fonseca · Movimento Uniforme · Reeducação Cognitivo-motora e Neurorreabilitação</p>
+    <p>Conteúdo educacional para profissionais de saúde. Não substitui avaliação clínica individual.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // ======= Configuração: preencha para ativar o botão do WhatsApp =======
+  var WHATSAPP = "552120266620"; // ex.: "5521999999999" (só números, com DDI 55)
+
+  // ---------- Programa ----------
+  var M=[
+    {c:"Módulo 1",t:"Fundamentos da tDCS e mapeamento cortical",
+     teo:["História e evolução da neuromodulação não invasiva (NNI).","Biofísica da tDCS: corrente contínua, efeito anódico (despolarização) e efeito catódico (hiperpolarização).","Mecanismos de neuroplasticidade de curto e longo prazo (LTP-like e LTD-like)."],
+     pra:["Sistema Internacional 10-20 do EEG: identificação dos pontos anatômicos (násio, ínio e trágus).","Localização dos principais alvos corticais: DLPFC (F3/F4), córtex motor (C3/C4), córtex parietal (P3/P4) e vértex (Cz)."]},
+    {c:"Módulo 2",t:"Parâmetros técnicos, equipamentos e segurança",
+     teo:["Parâmetros de aplicação: intensidade (mA), área dos eletrodos (cm²), densidade de corrente (mA/cm²) e carga de estimulação.","Solução salina (0,9%) e gel condutor: física da impedância e prevenção de queimaduras.","Critérios de segurança e contraindicações absolutas e relativas: placas metálicas, marca-passo, lesões de pele, risco epiléptico.","Manejo de efeitos adversos: formigamento, eritema, cefaleia, fosfenos."],
+     pra:["Manuseio e parametrização dos equipamentos de tDCS.","Preparo das esponjas, montagem de toucas e fitas e teste de impedância."]},
+    {c:"Módulo 3",t:"Aplicações clínicas em neurologia e no hospital",
+     teo:["tDCS no AVC, no traumatismo cranioencefálico (TCE) e nas lesões anóxicas.","Protocolos para aumento da vigilância (arousal) e desordens da consciência (ânodo em DLPFC/F3).","Reabilitação motora e espasticidade (córtex motor primário, M1).","Dor crônica e dor neuropática (protocolo C3/C4).","Integração com terapias concomitantes: fisioterapia, fonoaudiologia, terapia ocupacional, tPBM e tVNS."],
+     pra:["Simulação de montagens clínicas para quadros motores e neurovegetativos."]},
+    {c:"Módulo 4",t:"Protocolos avançados, estudos de caso e hands-on",
+     teo:["Análise neurofisiológica avançada: como integrar achados de EEG e mapeamento à tomada de decisão em tDCS.","Quadros complexos: hiperatividade simpática paroxística (PSH), instabilidade autonômica e prevenção de gatilhos.","Estudo de caso clínico anonimizado: encefalopatia anóxica e reabilitação hospitalar e domiciliar."],
+     pra:["Hands-on supervisionado: em duplas, os participantes planejam e executam montagens do início ao fim.","Avaliação de conduta e checklist de aplicação.","Entrega dos certificados."]}
+  ];
+  var tabs=[].slice.call(document.querySelectorAll(".tab")), panel=document.getElementById("panel");
+  function fill(ul,arr){ul.innerHTML="";arr.forEach(function(s){var li=document.createElement("li");li.textContent=s;ul.appendChild(li)})}
+  function show(i,focus){
+    tabs.forEach(function(t,j){var on=j===i;t.setAttribute("aria-selected",on);t.tabIndex=on?0:-1});
+    panel.setAttribute("aria-labelledby",tabs[i].id);
+    document.getElementById("p-chip").textContent=M[i].c;
+    document.getElementById("p-title").textContent=M[i].t;
+    fill(document.getElementById("p-teo"),M[i].teo); fill(document.getElementById("p-pra"),M[i].pra);
+    if(focus) tabs[i].focus();
+  }
+  tabs.forEach(function(t,i){
+    t.addEventListener("click",function(){show(i)});
+    t.addEventListener("keydown",function(e){
+      var k=e.key; if(k==="ArrowDown"||k==="ArrowRight"){e.preventDefault();show((i+1)%4,true)}
+      if(k==="ArrowUp"||k==="ArrowLeft"){e.preventDefault();show((i+3)%4,true)}
+    });
+  });
+  show(0);
+
+  // ---------- Formulário ----------
+  var form=document.getElementById("form"), instWrap=document.getElementById("inst-wrap");
+  function syncMod(){instWrap.hidden=!document.getElementById("mod-inc").checked}
+  form.addEventListener("change",syncMod);
+  [].slice.call(document.querySelectorAll("[data-mod]")).forEach(function(a){
+    a.addEventListener("click",function(){
+      document.getElementById(a.dataset.mod==="incompany"?"mod-inc":"mod-ind").checked=true; syncMod();
+    });
+  });
+  
+  form.addEventListener("submit",function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()};
+    var err=document.getElementById("err"), miss=[];
+    if(!v("nome")) miss.push("nome"); if(!v("prof")) miss.push("profissão"); if(!v("tel")) miss.push("telefone");
+    if(miss.length){err.textContent="Preencha: "+miss.join(", ")+".";err.hidden=false;return}
+    err.hidden=true;
+    var inc=document.getElementById("mod-inc").checked;
+    var lines=["Olá! Tenho interesse na Formação em tDCS com a Profª. Ma. Bianca Fonseca.","",
+      "Modalidade: "+(inc?"Turma in-company":"Inscrição individual"),
+      "Nome: "+v("nome"),"Profissão: "+v("prof")];
+    if(v("cidade")) lines.push("Cidade: "+v("cidade"));
+    if(inc&&v("inst")) lines.push("Instituição: "+v("inst"));
+    lines.push("Telefone: "+v("tel"));
+    if(v("msg")) lines.push("","Mensagem: "+v("msg"));
+    var text=lines.join("\n");
+    document.getElementById("out").textContent=text;
+    var wa=document.getElementById("wa");
+    if(WHATSAPP){wa.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(text);wa.hidden=false}
+    document.getElementById("result").hidden=false;
+    document.getElementById("copy-note").textContent="";
+  });
+  document.getElementById("copy").addEventListener("click",function(){
+    var pre=document.getElementById("out"), note=document.getElementById("copy-note");
+    function fallback(){var r=document.createRange();r.selectNodeContents(pre);var s=getSelection();s.removeAllRanges();s.addRange(r);note.textContent="Texto selecionado. Use Ctrl+C (ou copiar) para copiar."}
+    try{navigator.clipboard.writeText(pre.textContent).then(function(){note.textContent="Copiado."},fallback)}catch(x){fallback()}
+  });
+})();
+</script>
+
+</body>
+</html>
