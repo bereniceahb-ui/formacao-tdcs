@@ -346,6 +346,11 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 .hcard p{font-size:.95rem;color:var(--brown)}
 @media (max-width:980px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.hgrid{grid-template-columns:1fr}.hbar{flex-direction:column}.hbar span{flex:auto!important}}
+
+.btn-ig{background:linear-gradient(135deg,#F58529,#DD2A7B 55%,#8134AF);color:#fff;align-self:flex-start}
+.btn-ig svg{flex:none}
+.price-sm{font-size:clamp(1.8rem,3.6vw,2.4rem)!important}
+.price-note{margin:0;color:var(--brown);font-size:.98rem}
 </style>
 </head>
 <body>
@@ -484,7 +489,6 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
     </div>
     <div class="roles"><span>Médicos</span><span>Psicólogos</span><span>Fisioterapeutas</span><span>Fonoaudiólogos</span><span>Enfermeiros</span><span>Estudantes da área da saúde</span></div>
     <p class="lead">Profissionais e estudantes da área da saúde e das neurociências que desejam ampliar seus conhecimentos e desenvolver competências na aplicação clínica da neuromodulação, em <b>neurologia, psiquiatria, dor, fonoaudiologia e neurodesenvolvimento</b>. A turma é multiprofissional, o que favorece a atuação integrada.</p>
-    <p class="note">Pré-requisitos: <i class="ph">[confirmar com a Profª. Bianca: formação exigida e documentação]</i>. Cada conselho profissional tem normas próprias sobre o uso da tDCS; vale consultar as do seu.</p>
   </div>
 </section>
 
@@ -529,7 +533,7 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
       <p class="eyebrow">Coordenação</p>
       <h2>Profª. Ma. Bianca Fonseca</h2>
       <p>Psicóloga, psicanalista, psicopedagoga, psicomotricista e neuropsicopedagoga, com mais de 20 anos de experiência. Especialista em neurodesenvolvimento e neurofeedback, atua também com fotobiomodulação e com intervenções voltadas à aprendizagem, ao comportamento e às funções cognitivas.</p>
-      <p><i class="ph">[Formação e experiência específicas em neuromodulação e tDCS]</i> · <i class="ph">[Registro profissional]</i></p>
+      <a class="btn btn-ig" href="https://www.instagram.com/movimento_uniforme/" target="_blank" rel="noopener"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Conheça a Profª. Bianca no Instagram</a>
       <p style="font-family:var(--f-display);font-weight:600;color:var(--heading)">Movimento Uniforme · Reeducação Cognitivo-motora e Neurorreabilitação</p>
     </div>
   </div>
@@ -565,13 +569,13 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
       <article class="plan ind">
         <span class="chip">Inscrição individual</span>
         <h3>Turma aberta</h3>
-        <p class="price"><span class="ph">[valor]</span><small>por participante</small></p>
+        <p class="price price-sm">Valor sob consulta</p>
+        <p class="price-note">Valores e condições de pagamento são informados pelo WhatsApp <b>(21) 2026-6620</b>.</p>
         <p class="eb"><b>Lote de lançamento:</b> 15% de desconto na matrícula e inscrição até 09/12/2026</p>
         <ul>
           <li>Os 12 encontros (48 h) e as 112 h de atividades complementares</li>
           <li>Apostila, insumos e equipamentos para a prática</li>
           <li>Certificado e coffee break</li>
-          <li>Condições: <i class="ph">[parcelamento / Pix / cartão]</i></li>
         </ul>
         <a class="btn btn-primary" href="#inscricao" data-mod="individual">Quero minha vaga</a>
       </article>
@@ -590,7 +594,7 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
     </div>
     <div class="turma">
       <span><b>Início:</b> 09/01/2027</span>
-      <span><b>Local:</b> Rio de Janeiro · <i class="ph">[endereço]</i></span>
+      <span><b>Local:</b> Rio de Janeiro · em definição</span>
       <span><b>Horário:</b> sábados, das 9h às 13h</span>
     </div>
   </div>
@@ -605,9 +609,9 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
       <p class="lead">Preencha os dados e envie a mensagem pronta para a nossa equipe. Respondemos com datas, condições e o link de pagamento.</p>
       <div class="contact-list">
         <div><span class="k">WhatsApp</span><span id="wa-txt">(21) 2026-6620</span></div>
-        <div><span class="k">E-mail</span><span class="ph">[contato@...]</span></div>
-        <div><span class="k">Instagram</span><span class="ph">[@...]</span></div>
+        <div><span class="k">Instagram</span><a href="https://www.instagram.com/movimento_uniforme/" target="_blank" rel="noopener">@movimento_uniforme</a></div>
       </div>
+      <a class="btn btn-ig" href="https://www.instagram.com/movimento_uniforme/" target="_blank" rel="noopener" style="align-self:flex-start;margin-top:8px"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Seguir @movimento_uniforme</a>
     </div>
     <form class="f" id="form" novalidate>
       <div class="full radio" role="radiogroup" aria-label="Modalidade">
