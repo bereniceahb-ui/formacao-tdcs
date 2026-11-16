@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Formação em tDCS · Prática Hospitalar e Reabilitação</title>
-<meta name="description" content="Formação em tDCS na Prática Hospitalar e Reabilitação, coordenada pela Profª. Ma. Bianca Fonseca. 160 horas, 12 encontros presenciais aos sábados no Rio de Janeiro. Início em 09/01/2027.">
+<title>Formação em Neuromodulação – tDCS</title>
+<meta name="description" content="Formação em Neuromodulação – tDCS: fundamentos neurofisiológicos, prática clínica e aplicações em neurologia, psiquiatria, dor e neurodesenvolvimento. 160 horas (48 h presenciais + 112 h complementares), 12 encontros quinzenais no Rio de Janeiro. Coordenação: Profª. Ma. Bianca Fonseca.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
@@ -328,6 +328,24 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 @media (max-width:640px){.hero-bg .float{display:none}}
 .eb{margin:0;background:var(--accent-soft);color:var(--ink);border-radius:12px;padding:10px 14px;font-size:.95rem}
 .eb b{color:var(--accent-ink)}
+
+/* objetivo geral + carga horária */
+.goal-geral{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:clamp(20px,3vw,32px);display:flex;flex-direction:column;gap:10px;max-width:900px}
+.goal-geral p:last-child{font-size:1.12rem;line-height:1.65;color:var(--ink)}
+.hero h1 span{font-size:clamp(1.05rem,2.1vw,1.55rem);line-height:1.3;max-width:28ch}
+.hours{margin-top:clamp(36px,5vw,56px);display:flex;flex-direction:column;gap:18px}
+.hours h3{font-size:1.25rem}
+.hbar{display:flex;border-radius:14px;overflow:hidden;font-family:var(--f-display);font-weight:600;font-size:.9rem;min-height:52px}
+.hbar span{display:flex;align-items:center;padding:12px 16px;min-width:0}
+.hb1{background:var(--hero);color:var(--hero-ink)}
+.hb2{background:var(--accent);color:#2B1A0E}
+.hgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.hcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.hcard b{font-family:var(--f-display);font-size:1.8rem;line-height:1;color:var(--accent-ink)}
+.hcard h4{margin:0;font-family:var(--f-display);font-size:1.02rem;color:var(--heading);line-height:1.3}
+.hcard p{font-size:.95rem;color:var(--brown)}
+@media (max-width:980px){.hgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.hgrid{grid-template-columns:1fr}.hbar{flex-direction:column}.hbar span{flex:auto!important}}
 </style>
 </head>
 <body>
@@ -354,21 +372,21 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 <section class="hero hero-bleed">
   <div class="hero-bg">
     <picture><source media="(max-width:1180px)" srcset="hero-tdcs-m.jpg"><img src="hero-tdcs.jpg" alt="Ilustração de uma cabeça de perfil com o cérebro iluminado e dois eletrodos de esponja de tDCS presos por faixa elástica, com neurônios e fitas translúcidas ao fundo" width="1600" height="1200"></picture>
-    <div class="float f2"><b>160 h</b> presencial · RJ</div>
+    <div class="float f2"><b>160 h</b> em 6 meses</div>
     <div class="float f1"><span class="live" aria-hidden="true"></span>Neuromodulação não invasiva</div>
   </div>
   <div class="wrap">
     <div class="hero-copy">
-      <p class="eyebrow">Formação presencial · Rio de Janeiro</p>
-      <h1>Formação em tDCS<span>na Prática Hospitalar e Reabilitação</span></h1>
-      <p class="lead">Estimulação Transcraniana por Corrente Contínua, dos fundamentos neurofisiológicos à condução de protocolos clínicos em ambiente hospitalar, ambulatorial e domiciliar, com segurança e critério.</p>
+      <p class="eyebrow">Formação em Neuromodulação · Rio de Janeiro</p>
+      <h1>Formação em tDCS<span>Fundamentos neurofisiológicos, prática clínica e aplicações em neurologia, psiquiatria, dor e neurodesenvolvimento</span></h1>
+      <p class="lead">Estimulação Transcraniana por Corrente Contínua para profissionais e estudantes da área da saúde que desejam desenvolver competências na aplicação clínica da neuromodulação, com base teórica sólida e prática baseada em evidências.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#inscricao">Garantir minha vaga</a>
         <a class="btn btn-ghost" href="#programa">Ver o programa</a>
       </div>
       <div class="facts" role="list">
         <div role="listitem"><b>160 h</b><span>de formação</span></div>
-        <div role="listitem"><b>12</b><span>encontros aos sábados</span></div>
+        <div role="listitem"><b>12</b><span>encontros quinzenais aos sábados</span></div>
         <div role="listitem"><b>09/01</b><span>início da turma, 2027</span></div>
         <div role="listitem"><b>15% OFF</b><span>inscrições até 09/12/2026</span></div>
       </div>
@@ -384,13 +402,13 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Por que esta formação</p>
-      <h2>A neuromodulação não invasiva ganhou espaço na reabilitação. Aplicá-la bem exige base sólida.</h2>
-      <p class="lead">Para usar a tDCS com segurança e critério, o profissional precisa de fundamentação teórica e de prática supervisionada. É isso que a formação entrega.</p>
+      <h2>Transforme conhecimento em prática clínica</h2>
+      <p class="lead">Aprofunde seus conhecimentos em Neurociência, Neuromodulação e tDCS em uma formação completa, que alia fundamentação teórica sólida a prática clínica rigorosa e baseada em evidências.</p>
     </div>
     <div class="grid3">
       <article class="card"><span class="tick"></span><h3>Segurança do paciente</h3><p>Mapeamento preciso, parametrização correta e domínio das contraindicações e do manejo de efeitos adversos.</p></article>
-      <article class="card"><span class="tick"></span><h3>Protocolos para a realidade clínica</h3><p>Aplicação em ambiente hospitalar, ambulatorial e domiciliar, com foco em neurologia e reabilitação.</p></article>
-      <article class="card"><span class="tick"></span><h3>Cuidado integrado</h3><p>Como articular a tDCS com fisioterapia, fonoaudiologia, terapia ocupacional e outras abordagens da equipe.</p></article>
+      <article class="card"><span class="tick"></span><h3>Protocolos para quadros complexos</h3><p>Protocolos personalizados para condições neurológicas, psiquiátricas, fonoaudiológicas, de dor e do neurodesenvolvimento, inclusive com comorbidades.</p></article>
+      <article class="card"><span class="tick"></span><h3>Cuidado integrado</h3><p>Integração da tDCS ao treino cognitivo, à reabilitação motora, à fonoaudiologia e às terapias comportamentais.</p></article>
     </div>
   </div>
 </section>
@@ -399,15 +417,21 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 <section class="block">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow">Objetivos de aprendizagem</p>
-      <h2>Ao final da formação, você estará apto a</h2>
+      <p class="eyebrow">Objetivos do curso</p>
+      <h2>O que a formação desenvolve</h2>
     </div>
+    <div class="goal-geral">
+      <p class="chip">Objetivo geral</p>
+      <p>Capacitar profissionais da saúde e das neurociências a planejar, prescrever, aplicar e monitorar protocolos de Estimulação Transcraniana por Corrente Contínua (tDCS) com segurança, precisão neuroanatômica e embasamento em evidências científicas, abrangendo condições neurodesenvolvimentais, neurológicas, psiquiátricas, fonoaudiológicas e algológicas (tratamento da dor).</p>
+    </div>
+    <p class="chip" style="margin:36px 0 4px">Objetivos específicos</p>
     <ol class="goals">
-      <li><p>Compreender os mecanismos bioelétricos da tDCS: alteração do potencial de repouso da membrana e plasticidade sináptica (LTP/LTD).</p></li>
-      <li><p>Localizar com precisão os alvos corticais pelo Sistema Internacional 10-20.</p></li>
-      <li><p>Identificar indicações, contraindicações e parâmetros de segurança, e manejar efeitos adversos.</p></li>
-      <li><p>Elaborar protocolos individualizados para dor crônica, reabilitação motora, cognição, rebaixamento do nível de consciência e disautonomias, como a hiperatividade simpática paroxística (PSH).</p></li>
-      <li><p>Manusear os equipamentos: montagem de eletrodos, preparo das esponjas com solução salina e cálculo da densidade de corrente.</p></li>
+      <li><p>Compreender os mecanismos neurofisiológicos, celulares e moleculares da neuromodulação por corrente contínua.</p></li>
+      <li><p>Dominar a localização topográfica de eletrodos com base no Sistema Internacional 10-20 de EEG e no neurorroteamento visual/funcional.</p></li>
+      <li><p>Identificar parâmetros de dosimetria: densidade de corrente, área do eletrodo, tempo, rampas e polaridade anódica/catódica.</p></li>
+      <li><p>Construir e personalizar protocolos terapêuticos específicos para quadros clínicos complexos e comorbidades.</p></li>
+      <li><p>Integrar a tDCS a intervenções multidisciplinares: treino cognitivo, reabilitação motora, fonoaudiologia e terapias comportamentais.</p></li>
+      <li><p>Manejar biossegurança, contraindicações, efeitos adversos e aspectos ético-regulatórios na prática clínica.</p></li>
     </ol>
   </div>
 </section>
@@ -417,25 +441,37 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
   <div class="wrap">
     <div class="sec-head">
       <p class="eyebrow">Conteúdo programático</p>
-      <h2>Conteúdo organizado em 4 módulos</h2>
-      <p class="lead">Uma sequência progressiva, em que cada encontro combina teoria e prática.</p>
+      <h2>12 módulos quinzenais ao longo de 6 meses</h2>
+      <p class="lead">Cada encontro combina teoria e prática. Os eixos abaixo resumem os principais temas trabalhados ao longo dos módulos.</p>
     </div>
     <div class="prog">
-      <div class="tabs" role="tablist" aria-label="Módulos">
-        <button class="tab" role="tab" id="tab-1" aria-controls="panel" aria-selected="true" data-i="0"><span class="n">01</span><span class="t">Fundamentos e mapeamento cortical</span><span class="s">Módulo 1</span></button>
-        <button class="tab" role="tab" id="tab-2" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="1"><span class="n">02</span><span class="t">Parâmetros, equipamentos e segurança</span><span class="s">Módulo 2</span></button>
-        <button class="tab" role="tab" id="tab-3" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="2"><span class="n">03</span><span class="t">Aplicações clínicas em neurologia</span><span class="s">Módulo 3</span></button>
-        <button class="tab" role="tab" id="tab-4" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="3"><span class="n">04</span><span class="t">Protocolos avançados e hands-on</span><span class="s">Módulo 4</span></button>
+      <div class="tabs" role="tablist" aria-label="Eixos temáticos">
+        <button class="tab" role="tab" id="tab-1" aria-controls="panel" aria-selected="true" data-i="0"><span class="n">01</span><span class="t">Fundamentos e mapeamento cortical</span><span class="s">Eixo 1</span></button>
+        <button class="tab" role="tab" id="tab-2" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="1"><span class="n">02</span><span class="t">Parâmetros, equipamentos e segurança</span><span class="s">Eixo 2</span></button>
+        <button class="tab" role="tab" id="tab-3" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="2"><span class="n">03</span><span class="t">Aplicações clínicas</span><span class="s">Eixo 3</span></button>
+        <button class="tab" role="tab" id="tab-4" aria-controls="panel" aria-selected="false" tabindex="-1" data-i="3"><span class="n">04</span><span class="t">Protocolos avançados e hands-on</span><span class="s">Eixo 4</span></button>
       </div>
       <div class="panel" role="tabpanel" id="panel" aria-labelledby="tab-1">
-        <div><span class="chip" id="p-chip">Módulo 1</span><h3 id="p-title" style="font-size:1.55rem;margin-top:6px">Fundamentos da tDCS e mapeamento cortical</h3></div>
+        <div><span class="chip" id="p-chip">Eixo 1</span><h3 id="p-title" style="font-size:1.55rem;margin-top:6px">Fundamentos da tDCS e mapeamento cortical</h3></div>
         <div class="cols">
           <div class="col"><span class="chip">Teoria</span><ul id="p-teo"></ul></div>
           <div class="col pr"><span class="chip">Prática</span><ul id="p-pra"></ul></div>
         </div>
       </div>
     </div>
-    <p class="cadence">São <b>12 encontros presenciais aos sábados, das 9h às 13h</b>, com início em 9 de janeiro de 2027, no Rio de Janeiro. Carga horária total: 160 horas.</p>
+    <p class="cadence">São <b>12 encontros presenciais/síncronos de 4 horas, quinzenais, aos sábados, das 9h às 13h</b>, ao longo de 6 meses, com início em 9 de janeiro de 2027, no Rio de Janeiro.</p>
+    <div class="hours">
+      <h3>Distribuição da carga horária · 160 horas</h3>
+      <div class="hbar" role="img" aria-label="48 horas presenciais ou síncronas e 112 horas complementares">
+        <span class="hb1" style="flex:48">48 h presenciais/síncronas</span><span class="hb2" style="flex:112">112 h complementares</span>
+      </div>
+      <div class="hgrid">
+        <div class="hcard"><b>30 h</b><h4>Leituras dirigidas e resenhas</h4><p>Estudo de artigos científicos de referência, nacionais e internacionais, para cada módulo.</p></div>
+        <div class="hcard"><b>30 h</b><h4>Oficina de protocolos e neurorroteamento</h4><p>Exercícios práticos e simulação de posicionamento de eletrodos pelo mapa 10‑20.</p></div>
+        <div class="hcard"><b>20 h</b><h4>Estudos de caso clínico</h4><p>Análise e discussão de casos reais ou simulados em fóruns de discussão.</p></div>
+        <div class="hcard"><b>32 h</b><h4>Trabalho de Conclusão de Curso</h4><p>Protocolo clínico detalhado ou estudo de caso individual com revisão de literatura, apresentado ao final do semestre.</p></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -446,8 +482,8 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
       <p class="eyebrow">Público-alvo</p>
       <h2>Para quem é a formação</h2>
     </div>
-    <div class="roles"><span>Médicos</span><span>Psicólogos</span><span>Fisioterapeutas</span><span>Fonoaudiólogos</span><span>Enfermeiros</span></div>
-    <p class="lead">Profissionais que atuam em ambiente <b>hospitalar, ambulatorial ou domiciliar</b>, especialmente em neurologia e reabilitação. A turma é multiprofissional, o que favorece a atuação integrada.</p>
+    <div class="roles"><span>Médicos</span><span>Psicólogos</span><span>Fisioterapeutas</span><span>Fonoaudiólogos</span><span>Enfermeiros</span><span>Estudantes da área da saúde</span></div>
+    <p class="lead">Profissionais e estudantes da área da saúde e das neurociências que desejam ampliar seus conhecimentos e desenvolver competências na aplicação clínica da neuromodulação, em <b>neurologia, psiquiatria, dor, fonoaudiologia e neurodesenvolvimento</b>. A turma é multiprofissional, o que favorece a atuação integrada.</p>
     <p class="note">Pré-requisitos: <i class="ph">[confirmar com a Profª. Bianca: formação exigida e documentação]</i>. Cada conselho profissional tem normas próprias sobre o uso da tDCS; vale consultar as do seu.</p>
   </div>
 </section>
@@ -507,7 +543,7 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
       <h2>Estrutura e materiais incluídos</h2>
     </div>
     <div class="incl">
-      <div><h3>160 horas de formação</h3><p>Teoria e prática em 12 encontros presenciais aos sábados.</p></div>
+      <div><h3>160 horas de formação</h3><p>48 h em encontros presenciais/síncronos e 112 h de atividades complementares.</p></div>
       <div><h3>Material didático</h3><p>Apostila impressa e digital, com bloco e caneta.</p></div>
       <div><h3>Insumos práticos</h3><p>Solução fisiológica, esponjas, fita métrica, lápis dermográfico, gaze e álcool.</p></div>
       <div><h3>Equipamentos</h3><p>2 a 3 estimuladores de tDCS disponíveis nas aulas práticas.</p></div>
@@ -530,9 +566,9 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
         <span class="chip">Inscrição individual</span>
         <h3>Turma aberta</h3>
         <p class="price"><span class="ph">[valor]</span><small>por participante</small></p>
-        <p class="eb"><b>Early bird:</b> 15% de desconto para inscrições até 09/12/2026</p>
+        <p class="eb"><b>Lote de lançamento:</b> 15% de desconto na matrícula e inscrição até 09/12/2026</p>
         <ul>
-          <li>Os 12 encontros e as 160 horas de formação</li>
+          <li>Os 12 encontros (48 h) e as 112 h de atividades complementares</li>
           <li>Apostila, insumos e equipamentos para a prática</li>
           <li>Certificado e coffee break</li>
           <li>Condições: <i class="ph">[parcelamento / Pix / cartão]</i></li>
@@ -615,11 +651,13 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
     <div class="faq">
       <details><summary>A formação é presencial?</summary><p>Sim. As práticas exigem manuseio dos equipamentos, montagem de eletrodos e mapeamento com supervisão direta, por isso todos os encontros são presenciais, no Rio de Janeiro.</p></details>
       <details><summary>Preciso levar equipamento?</summary><p>Não. A formação disponibiliza 2 a 3 estimuladores de tDCS e todos os insumos para as aulas práticas.</p></details>
-      <details><summary>Recebo certificado?</summary><p>Sim. Ao concluir a formação e a avaliação prática por checklist, você recebe o certificado de 160 horas.</p></details>
+      <details><summary>Recebo certificado?</summary><p>Sim. Ao concluir os encontros, as atividades complementares e o Trabalho de Conclusão de Curso, você recebe o certificado de 160 horas.</p></details>
       <details><summary>A tDCS substitui outros tratamentos?</summary><p>Não. A formação trata a tDCS como recurso complementar ao plano terapêutico, sempre a partir de avaliação clínica individual e sem promessa de resultado terapêutico.</p></details>
       <details><summary>Como funciona a turma in-company?</summary><p>É uma turma fechada para até 15 profissionais da sua instituição, realizada nas suas dependências, com o mesmo conteúdo, materiais e certificação. Envie uma pré-inscrição marcando "Turma in-company" para receber a proposta.</p></details>
-      <details><summary>Quando são os encontros?</summary><p>São 12 encontros presenciais aos sábados, das 9h às 13h, com início em 9 de janeiro de 2027.</p></details>
-      <details><summary>Há desconto para inscrição antecipada?</summary><p>Sim. Inscrições feitas até 09/12/2026 têm 15% de desconto (early bird).</p></details>
+      <details><summary>Quando são os encontros?</summary><p>São 12 encontros quinzenais, aos sábados, das 9h às 13h, ao longo de 6 meses, com início em 9 de janeiro de 2027.</p></details>
+      <details><summary>O que são as 112 horas complementares?</summary><p>São atividades realizadas entre os encontros: leituras dirigidas e resenhas de artigos (30 h), oficina de montagem de protocolos e neurorroteamento (30 h), análise e discussão de estudos de caso clínico (20 h) e elaboração do Trabalho de Conclusão de Curso (32 h).</p></details>
+      <details><summary>Como é o Trabalho de Conclusão de Curso?</summary><p>Consiste na elaboração de um protocolo clínico detalhado ou de um estudo de caso individual com revisão de literatura, apresentado ao final do semestre.</p></details>
+      <details><summary>Há desconto para inscrição antecipada?</summary><p>Sim. No lote de lançamento, matrícula e inscrição feitas até 09/12/2026 têm 15% de desconto.</p></details>
     </div>
   </div>
 </section>
@@ -639,16 +677,16 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 
   // ---------- Programa ----------
   var M=[
-    {c:"Módulo 1",t:"Fundamentos da tDCS e mapeamento cortical",
+    {c:"Eixo 1",t:"Fundamentos da tDCS e mapeamento cortical",
      teo:["História e evolução da neuromodulação não invasiva (NNI).","Biofísica da tDCS: corrente contínua, efeito anódico (despolarização) e efeito catódico (hiperpolarização).","Mecanismos de neuroplasticidade de curto e longo prazo (LTP-like e LTD-like)."],
      pra:["Sistema Internacional 10-20 do EEG: identificação dos pontos anatômicos (násio, ínio e trágus).","Localização dos principais alvos corticais: DLPFC (F3/F4), córtex motor (C3/C4), córtex parietal (P3/P4) e vértex (Cz)."]},
-    {c:"Módulo 2",t:"Parâmetros técnicos, equipamentos e segurança",
+    {c:"Eixo 2",t:"Parâmetros técnicos, equipamentos e segurança",
      teo:["Parâmetros de aplicação: intensidade (mA), área dos eletrodos (cm²), densidade de corrente (mA/cm²) e carga de estimulação.","Solução salina (0,9%) e gel condutor: física da impedância e prevenção de queimaduras.","Critérios de segurança e contraindicações absolutas e relativas: placas metálicas, marca-passo, lesões de pele, risco epiléptico.","Manejo de efeitos adversos: formigamento, eritema, cefaleia, fosfenos."],
      pra:["Manuseio e parametrização dos equipamentos de tDCS.","Preparo das esponjas, montagem de toucas e fitas e teste de impedância."]},
-    {c:"Módulo 3",t:"Aplicações clínicas em neurologia e no hospital",
+    {c:"Eixo 3",t:"Aplicações clínicas em neurologia e no hospital",
      teo:["tDCS no AVC, no traumatismo cranioencefálico (TCE) e nas lesões anóxicas.","Protocolos para aumento da vigilância (arousal) e desordens da consciência (ânodo em DLPFC/F3).","Reabilitação motora e espasticidade (córtex motor primário, M1).","Dor crônica e dor neuropática (protocolo C3/C4).","Integração com terapias concomitantes: fisioterapia, fonoaudiologia, terapia ocupacional, tPBM e tVNS."],
      pra:["Simulação de montagens clínicas para quadros motores e neurovegetativos."]},
-    {c:"Módulo 4",t:"Protocolos avançados, estudos de caso e hands-on",
+    {c:"Eixo 4",t:"Protocolos avançados, estudos de caso e hands-on",
      teo:["Análise neurofisiológica avançada: como integrar achados de EEG e mapeamento à tomada de decisão em tDCS.","Quadros complexos: hiperatividade simpática paroxística (PSH), instabilidade autonômica e prevenção de gatilhos.","Estudo de caso clínico anonimizado: encefalopatia anóxica e reabilitação hospitalar e domiciliar."],
      pra:["Hands-on supervisionado: em duplas, os participantes planejam e executam montagens do início ao fim.","Avaliação de conduta e checklist de aplicação.","Entrega dos certificados."]}
   ];
