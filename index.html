@@ -8,7 +8,7 @@
 <meta name="description" content="Formação em Neuromodulação – tDCS: fundamentos neurofisiológicos, prática clínica e aplicações em neurologia, psiquiatria, dor e neurodesenvolvimento. 160 horas (48 h presenciais + 112 h complementares), 12 encontros quinzenais no Rio de Janeiro. Coordenação: Profª. Ma. Bianca Fonseca.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@500;600;700&family=Lato:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@500&display=swap">
 <style>
 /* Layout (versão B): abertura em marrom com o mapa 10-20, corpo em branco e taupe claro, creme da clínica nos destaques, faixa laranja no investimento. */
 :root{
@@ -354,6 +354,75 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 .btn-wa{background:#1F8F4E;color:#fff}
 .btn-wa:hover{background:#18763F}
 .plan .btn-wa{align-self:flex-start;margin-top:auto}
+
+/* ===== Versão D: estilo das artes (cobre, dourado, marrom profundo) ===== */
+:root:root:root{
+  --bg:#FFFBF6; --surface:#FFFFFF; --stone:#2B160E; --ink:#3A2117; --heading:#5A2E1A;
+  --brown:#7A4A33; --muted:#86644F; --line:#EADBCD; --accent:#E8742A; --accent-ink:#B04E17;
+  --accent-soft:#FFF0E0; --band:#C9622A; --band-ink:#2A140C; --ph:#FFF0E0; --hero:#5C301C; --hero-ink:#FFF3DF; --taupe:#C9853F;
+  --gold-1:#FFE6B8; --gold-2:#F2B566; --gold-3:#C77E37;
+  --f-serif:"Marcellus","Optima","Candara",Georgia,serif;
+  color-scheme:light;
+}
+.dark-scope,section.alt,header.top,footer.foot,.hero3{
+  --bg:#2B160E; --surface:rgba(255,214,170,.07); --ink:#F1E1D0; --heading:#F4C784; --brown:#E2C2A5;
+  --muted:#C7A386; --line:rgba(242,194,123,.24); --accent-ink:#FFB46A; --accent-soft:rgba(255,150,70,.14);
+  --taupe:#7A4326; --hero:#6B3A22; color:var(--ink);
+}
+h2{font-family:var(--f-serif);font-weight:400;letter-spacing:.005em;font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.eyebrow{color:var(--accent-ink)}
+section.alt{background:radial-gradient(ellipse at 12% 18%,rgba(255,130,50,.16),transparent 42%),radial-gradient(ellipse at 88% 85%,rgba(242,181,102,.12),transparent 46%),#2B160E}
+section.alt .card,section.alt .panel,section.alt .hcard,section.alt .tab[aria-selected="true"]{background:var(--surface);border-color:var(--line)}
+section.alt .card,section.alt .hcard{box-shadow:inset 0 1px 0 rgba(255,220,170,.08)}
+.tick{background:linear-gradient(90deg,var(--gold-2),var(--accent))}
+.btn-primary{background:linear-gradient(180deg,var(--gold-1),var(--gold-2) 55%,var(--gold-3));color:#4A2210;box-shadow:0 6px 20px rgba(201,126,55,.35),inset 0 1px 0 rgba(255,255,255,.6)}
+.btn-ghost{color:var(--heading);border-color:var(--line)}
+.goals li::before{background:linear-gradient(180deg,var(--gold-2),var(--gold-3));color:#3A1A0C}
+/* cabeçalho */
+header.top{background:rgba(36,18,11,.92);border-bottom:1px solid rgba(242,194,123,.18)}
+header.top .brand{color:var(--heading)} header.top .brand small{color:var(--muted)}
+header.top nav.links a{color:var(--ink)} header.top nav.links a:hover{color:var(--gold-2)}
+.brand-logo{width:46px;height:auto;flex:none}
+body::before{background:#24120B}
+/* hero */
+.hero3{background:#2B160E;padding:0 0 clamp(48px,7vw,88px);text-align:center;overflow:hidden}
+.hero3-art{position:relative;height:clamp(220px,38vw,500px);overflow:hidden}
+.hero3-art img{width:100%;height:100%;object-fit:cover;object-position:50% 45%;display:block}
+.hero3-art::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,22,14,0) 45%,rgba(43,22,14,.75) 80%,#2B160E 100%),linear-gradient(90deg,#2B160E 0,rgba(43,22,14,0) 14%,rgba(43,22,14,0) 86%,#2B160E 100%)}
+.hero3-copy{position:relative;z-index:1;margin-top:clamp(-120px,-8vw,-36px);display:flex;flex-direction:column;align-items:center;gap:18px}
+.hero3 h1{font-family:"Poppins",sans-serif;font-weight:700;font-size:clamp(2.5rem,7.2vw,5.6rem);line-height:1;letter-spacing:.01em;background:linear-gradient(180deg,var(--gold-1) 10%,var(--gold-2) 55%,var(--gold-3) 95%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 4px 22px rgba(255,140,40,.35))}
+.hero3-sub{font-family:var(--f-serif);text-transform:uppercase;letter-spacing:.06em;font-size:clamp(1rem,1.9vw,1.4rem);line-height:1.45;color:var(--ink);max-width:44ch;text-wrap:balance}
+.hero3 .lead{color:var(--brown);max-width:62ch}
+.hero3 .cta{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.launch{margin:0;border:1px solid rgba(242,194,123,.55);border-radius:999px;padding:8px 18px;font-family:"Poppins",sans-serif;font-size:.9rem;color:var(--ink);background:rgba(255,150,70,.10)}
+.launch b{color:var(--gold-2)}
+.facts3{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;width:100%;max-width:880px;margin-top:10px}
+.facts3 div{border:1px solid var(--line);border-radius:16px;padding:16px 12px;background:var(--surface);display:flex;flex-direction:column;gap:4px}
+.facts3 b{font-family:"Poppins",sans-serif;font-size:clamp(1.15rem,2.2vw,1.55rem);color:var(--gold-2);line-height:1.1}
+.facts3 span{font-size:.88rem;color:var(--muted)}
+@media (max-width:700px){.facts3{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* faixa da marca */
+.brandstrip{background:#FFFBF6;border-bottom:1px solid var(--line)}
+.brandstrip .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;padding-block:22px}
+.mu-logo{width:clamp(180px,24vw,260px);height:auto}
+.coord{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--ink)}
+.coord img{width:84px;height:84px;flex:none}
+.coord > span{display:flex;flex-direction:column;line-height:1.3}
+.coord small{font-family:"Poppins",sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent-ink)}
+.coord b{font-family:var(--f-serif);font-weight:400;font-size:1.35rem;color:var(--heading)}
+.coord > span > span{font-size:.92rem;color:var(--muted)}
+@media (max-width:640px){.brandstrip .wrap{justify-content:center;text-align:left}}
+/* carga horária, investimento, docente, rodapé */
+.hb1{background:#6B3A22;color:#FFF3DF}
+.hb2{background:linear-gradient(90deg,var(--gold-2),var(--accent));color:#3A1A0C}
+.invest{background:linear-gradient(135deg,#A9461A,#D86D2E 55%,#EE9A52)}
+.invest .lead,.invest h2,.invest h3,.invest .eyebrow,.invest .turma{color:#2A140C}
+.plan.inc{border-color:rgba(42,20,12,.35)}
+.plan.ind .btn-primary{background:linear-gradient(180deg,var(--gold-1),var(--gold-2) 55%,var(--gold-3));color:#4A2210}
+.photo::before{background:linear-gradient(160deg,var(--gold-2),#7A4326)}
+footer.foot{background:#24120B;border-top:1px solid rgba(242,194,123,.18);color:var(--muted)}
+.faq summary::after{color:var(--gold-2)}
+@media (max-width:560px){header.top .brand small{display:none}.launch{font-size:.82rem}}
 </style>
 </head>
 <body>
@@ -361,7 +430,7 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#inicio" aria-label="Formação em tDCS, início">
-      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="14" fill="none" stroke="var(--brown)" stroke-width="2.2"/><circle cx="11" cy="15" r="3.2" fill="var(--accent)"/><circle cx="23" cy="15" r="3.2" fill="var(--accent)"/><circle cx="17" cy="23" r="2.4" fill="var(--brown)"/></svg>
+      <img class="brand-logo" src="logo-cerebro.png" alt="" width="160" height="102">
       <span>Formação em tDCS<small>Profª. Ma. Bianca Fonseca · Movimento Uniforme</small></span>
     </a>
     <nav class="links" aria-label="Seções">
@@ -377,31 +446,35 @@ footer.foot b{font-family:var(--f-display);color:var(--heading);font-weight:600}
 
 <main id="inicio">
 <!-- HERO -->
-<section class="hero hero-bleed">
-  <div class="hero-bg">
-    <picture><source media="(max-width:1180px)" srcset="hero-tdcs-m.jpg"><img src="hero-tdcs.jpg" alt="Ilustração de uma cabeça de perfil com o cérebro iluminado e dois eletrodos de esponja de tDCS presos por faixa elástica, com neurônios e fitas translúcidas ao fundo" width="1600" height="1200"></picture>
-    <div class="float f2"><b>160 h</b> em 6 meses</div>
-    <div class="float f1"><span class="live" aria-hidden="true"></span>Neuromodulação não invasiva</div>
-  </div>
-  <div class="wrap">
-    <div class="hero-copy">
-      <p class="eyebrow">Formação em Neuromodulação · Rio de Janeiro</p>
-      <h1>Formação em tDCS<span>Fundamentos neurofisiológicos, prática clínica e aplicações em neurologia, psiquiatria, dor e neurodesenvolvimento</span></h1>
-      <p class="lead">Estimulação Transcraniana por Corrente Contínua para profissionais e estudantes da área da saúde que desejam desenvolver competências na aplicação clínica da neuromodulação, com base teórica sólida e prática baseada em evidências.</p>
-      <div class="cta">
-        <a class="btn btn-primary" href="#inscricao">Garantir minha vaga</a>
-        <a class="btn btn-ghost" href="#programa">Ver o programa</a>
-      </div>
-      <div class="facts" role="list">
-        <div role="listitem"><b>160 h</b><span>de formação</span></div>
-        <div role="listitem"><b>12</b><span>encontros quinzenais aos sábados</span></div>
-        <div role="listitem"><b>09/01</b><span>início da turma, 2027</span></div>
-        <div role="listitem"><b>15% OFF</b><span>inscrições até 09/12/2026</span></div>
-      </div>
-      <a class="by" href="#docente" style="text-decoration:none;color:inherit"><img src="dra-bianca-circulo.png" alt="" width="240" height="240"><p><b>Coordenação: Profª. Ma. Bianca Fonseca</b><span>Mais de 20 anos em neurodesenvolvimento</span></p></a>
+<section class="hero3">
+  <div class="hero3-art"><img src="hero-cerebro-cobre.jpg" alt="Ilustração de um cérebro luminoso em tons de cobre e dourado, envolto por fitas e neurônios" width="1194" height="560"></div>
+  <div class="wrap hero3-copy">
+    <p class="launch">Lote de lançamento · <b>15% OFF</b> até 09/12/2026</p>
+    <p class="eyebrow">Formação em Neuromodulação · Rio de Janeiro</p>
+    <h1>FORMAÇÃO EM tDCS</h1>
+    <p class="hero3-sub">Fundamentos neurofisiológicos, prática clínica e aplicações em neurologia, psiquiatria, dor e neurodesenvolvimento</p>
+    <p class="lead">Estimulação Transcraniana por Corrente Contínua para profissionais e estudantes da área da saúde que desejam desenvolver competências na aplicação clínica da neuromodulação, com base teórica sólida e prática baseada em evidências.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#inscricao">Garanta sua vaga</a>
+      <a class="btn btn-ghost" href="#programa">Ver o programa</a>
     </div>
+    <div class="facts3" role="list">
+      <div role="listitem"><b>160 h</b><span>de formação</span></div>
+      <div role="listitem"><b>12</b><span>encontros quinzenais aos sábados</span></div>
+      <div role="listitem"><b>09/01/2027</b><span>início da turma</span></div>
+      <div role="listitem"><b>9h às 13h</b><span>modalidade presencial</span></div>
+    </div>
+  </div>
+</section>
 
-    <div class="hero-space" aria-hidden="true"></div>
+<!-- FAIXA DA MARCA -->
+<section class="brandstrip">
+  <div class="wrap">
+    <img class="mu-logo" src="logo-movimento-uniforme.png" alt="Movimento Uniforme · Reeducação Cognitivo-Motora e Neurorreabilitação" width="394" height="234">
+    <a class="coord" href="#docente">
+      <img src="dra-bianca-circulo.png" alt="" width="240" height="240">
+      <span><small>Coordenação</small><b>Profª. Ma. Bianca Fonseca</b><span>Modalidade presencial · Rio de Janeiro</span></span>
+    </a>
   </div>
 </section>
 
